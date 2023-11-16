@@ -1,7 +1,8 @@
 {
-  "name": "typer",
+  "name": "svelte-typer",
+  "description": "A typing practice web app built with Svelte",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
