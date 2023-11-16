@@ -160,7 +160,7 @@
             <h1 class="text-3xl text-center">Completed!!</h1>
             <TyperResult data={{wpm,wpms,accuracy,maxWpm,timeElapsed,time}} />
         {:else}
-            <div class="flex items-center justify-center  ">
+            <div class="flex items-center justify-center mt-4 mb-2">
                 <button on:click={handleBtnClick} class="bg-[#83A2FF] text-white px-4 py-1 text-xl rounded-md shadow-md flex items-center justify-center gap-1" >
                     {#if !isStarted}
                         <Icon icon="ph:play-fill" class="w-6 h-6" />
