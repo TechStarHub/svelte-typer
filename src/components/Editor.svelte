@@ -1,6 +1,7 @@
 <script>
     import Icon from '@iconify/svelte'
     import TyperResult from './TyperResult.svelte';
+    import ToolTip from './ToolTip.svelte';
     import { onMount } from 'svelte';
 
     let givenText = "SvelteKit provides a filesystem router, server-side rendering (SSR), code-splitting, and hot module replacement (HMR) out of the box. It's built on top of Svelte and Node.js, and is compatible with the vast ecosystem of Node libraries.";
@@ -165,7 +166,14 @@
 
 <div class="p-4 bg-[#EEF5FF] rounded-md shadow-md w-[90vw] sm:w-[80vw] md:w-[60vw]">
     <div class="mb-2">
-        <h3 class="text-2xl font-bold text-center mb-2">Given Text</h3>
+        <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-bold text-center mb-2">Given Text</h3>
+            <ToolTip label="Reset Paragraph" >
+                <button on:click={handleResetBtnClick} class="hover:bg-slate-300 p-1 rounded hover:shadow transition-shadow ">
+                    <Icon icon="iconamoon:restart" class="w-6 h-6  text-slate-600 " />
+                </button>
+            </ToolTip>
+        </div>
         <p class="text-xl">
             {#each givenLetters as letter}
                 {#if letter.isCorrect === true}
