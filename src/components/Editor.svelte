@@ -1,8 +1,9 @@
 <script>
     import Icon from '@iconify/svelte'
     import TyperResult from './TyperResult.svelte';
+    import { onMount } from 'svelte';
 
-    const givenText = "SvelteKit provides a filesystem router, server-side rendering (SSR), code-splitting, and hot module replacement (HMR) out of the box. It's built on top of Svelte and Node.js, and is compatible with the vast ecosystem of Node libraries.";
+    let givenText = "SvelteKit provides a filesystem router, server-side rendering (SSR), code-splitting, and hot module replacement (HMR) out of the box. It's built on top of Svelte and Node.js, and is compatible with the vast ecosystem of Node libraries.";
 
     let typedText = "";
     let wpm = 0;
@@ -125,8 +126,41 @@
         return wpm;
     }
 
+    let givenLetters = createLetters(givenText);
 
-    const givenLetters = createLetters(givenText);
+    // function to reset the editor
+    function resetEditor () {
+        typedText = "";
+        wpm = 0;
+        wpms = [];
+        maxWpm = 0;
+        accuracy = "00.00";
+        time = 120;
+        timeElapsed = 0;
+        inputDisabled = true;
+        isCompleted = false;
+        isPaused = false;
+        isStarted = false;
+        fetch(`/data/paras.json`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            const para = data[Math.floor(Math.random()*data.length)];
+            time = para.time;
+            givenText = para.text;
+            givenLetters = createLetters(givenText);
+        })
+    }
+
+    // on reset btn click
+    function handleResetBtnClick () {
+        resetEditor();
+    }
+
+    onMount(() => {
+        resetEditor();
+    });
+
 </script>
 
 <div class="p-4 bg-[#EEF5FF] rounded-md shadow-md w-[90vw] sm:w-[80vw] md:w-[60vw]">
@@ -149,7 +183,7 @@
             <h3 class="text-2xl font-bold mb-3">Write Here</h3>
             <h3 class="text-2xl font-medium mb-3">Time: {timeToString(time)}</h3>
         </div>
-        <textarea disabled={inputDisabled} on:input={handleOnchange} class="w-full rounded border-[#83A2FF]  outline outline-[#83A2FF] p-1" name="" id="" cols="40" rows="6" ></textarea>
+        <textarea disabled={inputDisabled} on:input={handleOnchange} value={typedText} class="w-full rounded border-[#83A2FF]  outline outline-[#83A2FF] p-1" name="" id="" cols="40" rows="6" ></textarea>
 
         <div class="w-full flex justify-between items-center">
             <h4 class="font-medium">Accuracy : {accuracy} %</h4>
@@ -159,6 +193,10 @@
         {#if isCompleted}
             <h1 class="text-3xl text-center">Completed!!</h1>
             <TyperResult data={{wpm,wpms,accuracy,maxWpm,timeElapsed,time}} />
+            <button on:click={handleResetBtnClick} class="bg-[#83A2FF] text-white px-4 py-1 text-xl rounded-md shadow-md flex items-center justify-center gap-1 mx-auto" >
+                <Icon icon="solar:restart-bold" class="w-6 h-6" />
+                <span>Restart</span>
+            </button>
         {:else}
             <div class="flex items-center justify-center mt-4 mb-2">
                 <button on:click={handleBtnClick} class="bg-[#83A2FF] text-white px-4 py-1 text-xl rounded-md shadow-md flex items-center justify-center gap-1" >
