@@ -3,7 +3,7 @@
     export let data = {
         wpm: 0,
         wpms: [],
-        accuracy: 0,
+        accuracy: "00.00",
         maxWpm: 0,
         timeElapsed: 0,
         time: 0,

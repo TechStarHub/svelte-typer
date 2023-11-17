@@ -34,6 +34,10 @@
                 <span class="text-sm font-medium ml-[1px]">Code</span>
             </a>
             <a href="https://github.com/TechStarHub/svelte-typer/issues" class="text-sm font-medium  ">Issues</a>
+            <a href="https://github.com/TechStarHub/svelte-typer/License" class="text-sm font-medium  ">License</a>
+            <a href="https://app.netlify.com/sites/svelte-typer/deploys" class="text-sm font-medium">
+                <img src="https://api.netlify.com/api/v1/badges/905f0774-edc8-492e-97e0-98b2cf858ce3/deploy-status" alt="" class="">
+            </a>
         </div>
         <p class="text-sm text-slate-600 w-full sm:w-1/2">
             TechStarHub is a community of developers and designers who are passionate about building and creating amazing things with code.
