@@ -6,6 +6,7 @@
 
     let givenText = "SvelteKit provides a filesystem router, server-side rendering (SSR), code-splitting, and hot module replacement (HMR) out of the box. It's built on top of Svelte and Node.js, and is compatible with the vast ecosystem of Node libraries.";
 
+    let paraData = {}
     let typedText = "";
     let wpm = 0;
     let wpms = [];
@@ -17,6 +18,7 @@
     let isCompleted = false;
     let isPaused = false;
     let isStarted = false;
+    let showParaInfo = false;
     
     // create an array of letter objects from the givenText
     /* @params text : string */
@@ -147,10 +149,16 @@
         .then(data => {
             console.log(data);
             const para = data[Math.floor(Math.random()*data.length)];
+            paraData = para;
             time = para.time;
             givenText = para.text;
             givenLetters = createLetters(givenText);
         })
+    }
+
+    // handle para info btn click
+    function handleParaInfoBtnClick () {
+        showParaInfo = !showParaInfo;
     }
 
     // on reset btn click
@@ -185,6 +193,20 @@
                 {/if}
             {/each}
         </p>
+        <button on:click={handleParaInfoBtnClick} class="bg-[#83A2FF] text-white px-1 py-[2px] text-sm rounded-md shadow-md flex items-center justify-center gap-1 mt-1">
+            <Icon icon="material-symbols:info-outline" class="w-4 h-4" />
+            <span class="">
+                Para Info
+            </span>
+        </button>
+        {#if showParaInfo}
+            <div class="flex flex-col gap-1 mt-2">
+                <h4 class="font-medium">Title: {paraData.title}</h4>
+                <h4 class="font-medium">Author: {paraData.author}</h4>
+                <h4 class="font-medium">Source: {paraData.source}</h4>
+            </div>
+            <p class="text-sm mt-2">{paraData.description}</p>
+        {/if}
     </div>
     <div class="">
         <div class="flex justify-between items-center">
