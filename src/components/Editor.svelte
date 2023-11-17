@@ -203,7 +203,7 @@
             <div class="flex flex-col gap-1 mt-2">
                 <h4 class="font-medium">Title: {paraData.title}</h4>
                 <h4 class="font-medium">Author: {paraData.author}</h4>
-                <h4 class="font-medium">Source: {paraData.source}</h4>
+                <h4 class="font-medium">Source: {paraData.resource}</h4>
             </div>
             <p class="text-sm mt-2">{paraData.description}</p>
         {/if}
