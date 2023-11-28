@@ -77,7 +77,7 @@
     "description": "Immerse yourself in the mystical beauty of the enchanted forest, where every tree seems to whisper ancient secrets and magical creatures hide among the ferns.",
     "text": "As you step into the dappled sunlight filtering through the dense canopy, you'll notice the air filled with the sweet fragrance of blooming flowers and the soft rustle of leaves underfoot. The towering trees, their bark adorned with moss and lichen, create a sense of timeless wonder. Birds of vibrant plumage flit from branch to branch, adding bursts of color to the emerald-green surroundings. Take a moment to listen to the gentle babble of a nearby brook, its crystal-clear waters winding their way through the heart of the forest. In this serene haven, time seems to slow down, allowing you to savor the tranquility of nature's embrace.",
     "time": 180,
-    "resources": "https://www.nature.com/enchanted-forest-guide"
+    "resource": "https://www.nature.com/enchanted-forest-guide"
   },
   {
     "title": "Exploring Ancient Ruins",
@@ -85,7 +85,7 @@
     "description": "Embark on a virtual journey to explore the mysteries of ancient ruins, where the echoes of bygone civilizations whisper tales of lost grandeur.",
     "text": "Wandering through the crumbling stone archways and moss-covered pillars, you'll feel the weight of history in every step. The air is thick with the scent of aged stone, and shafts of sunlight pierce through gaps in the ruins, revealing intricate carvings and faded murals. Your adventure takes you through forgotten chambers and forgotten corridors, each corner holding the promise of uncovering the secrets of a long-forgotten era.",
     "time": 240,
-    "resources": "https://www.archaeologyexplore.com"
+    "resource": "https://www.archaeologyexplore.com"
   },
   {
     "title": "Underwater Wonderland",
@@ -93,7 +93,7 @@
     "description": "Dive into the depths of the ocean for a mesmerizing exploration of the underwater world, where vibrant coral reefs and graceful marine life create a kaleidoscope of colors.",
     "text": "Swimming alongside schools of iridescent fish, you'll encounter coral formations that resemble intricate works of art. The play of light on the ocean floor creates a dance of shadows and highlights, revealing the hidden beauty of this aquatic wonderland. Keep an eye out for majestic sea turtles gliding through the water and elusive seahorses camouflaged among the swaying sea plants. As you navigate through the silent currents, the underwater symphony of clicks and whistles from dolphins adds a magical soundtrack to your immersive journey.",
     "time": 300,
-    "resources": "https://www.oceanexploration.com"
+    "resource": "https://www.oceanexploration.com"
   },
   {
     "title": "Cosmic Odyssey",
@@ -101,7 +101,7 @@
     "description": "Embark on a cosmic odyssey through the vastness of space, where distant galaxies, swirling nebulae, and dazzling constellations paint the canvas of the universe.",
     "text": "As you drift among the stars, the inky blackness of space is punctuated by bursts of vibrant colors and celestial bodies. Marvel at the sheer scale of cosmic wonders, from colossal supernovae to delicate star clusters. Gliding through the cosmic tapestry, you'll witness the dance of planets in their orbits and the ethereal glow of distant quasars. Feel the awe-inspiring beauty of the cosmos as you traverse the endless expanse, a mere speck in the grandeur of the universe.",
     "time": 360,
-    "resources": "https://www.cosmicexploration.org"
+    "resource": "https://www.cosmicexploration.org"
   },
   {
     "title": "Culinary Delights",
@@ -109,6 +109,6 @@
     "description": "Embark on a culinary journey to discover the diverse flavors and aromas of global cuisine, where each dish tells a story of tradition, innovation, and passion.",
     "text": "From the sizzling street markets of Bangkok to the cozy bistros of Paris, your taste buds will travel across continents. Imagine the spicy warmth of Indian curry, the delicate textures of sushi, and the rich, velvety taste of Italian gelato. As you explore the culinary landscape, learn about the cultural significance of each dish and the artistry behind its preparation. Whether you're a seasoned chef or an aspiring home cook, this gastronomic adventure promises a feast for the senses.",
     "time": 240,
-    "resources": "https://www.worldculinaryjourney.com"
+    "resource": "https://www.worldculinaryjourney.com"
   }
 ]
