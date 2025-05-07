@@ -1,47 +1,72 @@
-# Svelte + Vite
+<div align="center">
+    <img src="https://github.com/TechStarHub/svelte-typer-svelte-kit/assets/85790967/d29317a1-bb7b-4bfd-80a4-d527a1fc5cc8" width="250">
+    <h1>Svelte Typer</h1>
+    <p>
+        A simple typing practice app built with <b>Svelte</b> and <b>Tailwind CSS</b>. Practice typing with a random paragraph with a random length. The app will calculate your typing speed and accuracy.
+    </p>
 
-This template should help get you started developing with Svelte in Vite.
+[![GitHub issues](https://img.shields.io/github/issues/TechStarHub/svelte-typer?style=for-the-badge)]()
+[![GitHub forks](https://img.shields.io/github/forks/TechStarHub/svelte-typer?style=for-the-badge)]()
+[![GitHub stars](https://img.shields.io/github/stars/TechStarHub/svelte-typer?style=for-the-badge)]()
+[![GitHub license](https://img.shields.io/github/license/TechStarHub/svelte-typer?style=for-the-badge)]()
 
-## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+</div>
 
-## Need an official Svelte framework?
+# 📢 Announcement
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+>An extension of this project is now available. Check it out [https://github.com/TechStarHub/svelte-typer-svelte-kit](https://github.com/TechStarHub/svelte-typer-svelte-kit) 
+This project will be as it is and you can contribute to this project if you want. But the new project will be the main project and we will add more features to it. So, if you want to contribute then contribute to the new project. Thank you 😃
 
-## Technical considerations
+>**Note:** This project is for Svelte Developers if you are familliar with Svelte Kit then we recommend you to contribute to the new project.
 
-**Why use this over SvelteKit?**
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## 🚀 Live Website
+Production Build: https://svelte-typer.netlify.app/
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+## 🎯 About the Project
+This project is a part of the [TechStarHub]() organization. This is a simple typing practice app built with Svelte and Tailwind CSS. Practice typing with a random paragraph with a random length. The app will calculate your typing speed and accuracy.
 
-**Why include `.vscode/extensions.json`?**
+## 📌 Features
+- Random paragraph with random length
+- Calculate typing speed and accuracy
+- Responsive design
+- Pause and resume typing
+  
+## 🛠️ Technologies Used
+- [Svelte](https://svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome!
 
-**Why enable `checkJs` in the JS template?**
+Feel free to check [issues page](https://github.com/TechStarHub/svelte-typer-svelte-kit/issues). You can also take a look at the [contributing guide](./CONTRIBUTING.md).
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+## 📝 License
+This project is [MIT](./LICENSE) licensed.
 
-**Why is HMR not preserving my local component state?**
+## 👨‍💻 Contributors
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/iamBijoyKar"><img src="https://avatars.githubusercontent.com/u/85790967?s=96&v=4" width="100px;" alt=""/><br /><sub><b>Bijoy Kar</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    </tr>
+</table>
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+## 📢 Feedback
+If you have any feedback, please reach out or make an issue/pr.
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+## 🏫 Join our Organization
+If you want to join our organization then fill the google form below 👇
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+https://forms.gle/QfuJi1ogdqGATHq5A
+
+After filling this form a response will be send within a few days. We are waiting for you guys so be quick and join us 😃
+
+## 🙌 Show your support
+Give a ⭐️ if you like this project! 
+
+
+
